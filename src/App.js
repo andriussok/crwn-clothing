@@ -31,10 +31,7 @@ class App extends React.Component {
               id: onSnapshot.id,
               ...onSnapshot.data()
             }
-          },
-          // console log our state
-           () => { console.log(this.state) }
-           );
+          });
         });
       } else {
         this.setState({currentUser: userAuth});
